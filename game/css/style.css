@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url("../assets/ciel.jpg");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    color: #fff;
+    font-family: 'Tauri', sans-serif;
+}
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 42px;
+}
+h3 {
+    font-size: 32px;
+}
+h4 {
+    font-size: 20px;
+}
+
+.container {
+    animation-duration: 3s;
+    animation-name: slidein;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    left: 17%;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
